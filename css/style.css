@@ -1,0 +1,183 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-weight: normal;
+}
+.background{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/b.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow-y: auto;
+}
+
+.nav{
+	width: 350px;
+	height: auto;
+	position: absolute;
+	top: 20%;
+	left: 0;
+}
+.nav a{
+	text-decoration: none;
+	font-size: 28px;
+	font-family: verdana;
+	font-weight: bold;
+	height: 90px;
+	margin: 5px 0;
+	float: left;
+	display: inline-block;
+	background-color: black;
+	color: white;
+	line-height: 90px;
+	text-align: center;
+	transition: 300ms;
+}
+a.active, .nav a:hover{
+	background-color: white;
+	color: black;
+	width: 100%;
+}
+.a{
+	width: 95%;
+}
+.b{
+	width: 85%;
+}
+.c{
+	width: 80%;
+}
+.d{
+	width: 90%;
+}
+
+.content{
+	position: absolute;
+	width: 930px;
+	min-height: 500px;
+	height: auto;
+	right: 0;
+	top: 10%;
+}
+.home{
+	
+	position: absolute;
+	right: 0;
+	bottom: -50px;
+	color: white;
+	font-family: verdana;
+}
+.home h1{
+	font-size: 95px;
+	padding-right: 90px;
+	border-bottom: 1px solid white;
+	text-transform: uppercase;
+}
+.home h3{
+	color: rgb(255, 0, 43);
+	font-size: 28px;
+	padding: 5px 0;
+	opacity: 0.6;
+}
+
+
+.aboutus{
+	
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	font-family: cursive;
+	padding: 0 60px;
+	display: none;
+	
+}
+.aboutus p{
+	color: rgb(228, 5, 5);
+	font-size: 25px;
+	line-height: 38px;
+	margin-bottom: 15px;
+	
+}
+
+.gallery{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	padding: 0 60px;
+	display: none;
+}
+.gallery .image{
+	width: 80%;
+	margin: 1%;
+	float: left;
+}
+.image img{
+	width: 90%;
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+.image img:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
+
+.image video{
+	width: 100%;
+	height: auto;
+}
+
+
+.contactus{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	padding: 0 60px;
+	display: none;
+}
+.inputtext{
+	width: 55%;
+	height: 65px;
+	border: 3px solid black;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 0 10px;
+	float: left;
+	margin-bottom: 15px;
+}
+.inputmessage{
+	width: 55%;
+	height: 135px;
+	border: 3px solid black;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 0 10px;
+	float: left;
+}
+.submitbutton{
+	width: 160px;
+	height: 65px;
+	font-family: arial;
+	background-color: white;
+	color: black;
+	font-size: 28px;
+	border: none;
+	font-weight: bold;
+	float: left;
+	clear: both;
+	margin-top: 25px;
+}
+
