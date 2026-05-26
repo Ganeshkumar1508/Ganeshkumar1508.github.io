@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ganesh Kumar M A — Developer Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- Background Grid -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">GK<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#certifications" class="mobile-link">Certifications</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="tag-dot"></span> Available for opportunities
+      </div>
+      <h1 class="hero-name reveal">
+        <span class="line">Ganesh</span>
+        <span class="line accent">Kumar</span>
+        <span class="line">M A</span>
+      </h1>
+      <p class="hero-role reveal">
+        <span class="typed" id="typed"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-summary reveal">
+        CSE graduate with MBA in Systems Management. Building scalable software with Python, Java, MuleSoft & REST APIs — based in Chennai, India.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="assets/Ganesh_Kumar_Resume.pdf" class="btn btn-outline" download>Download CV</a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="mailto:ma.ganesh8460@gmail.com" class="social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.908 1.528-1.147C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <span>GK</span>
+        </div>
+        <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit-3"><div class="orbit-dot"></div></div>
+      </div>
+      <div class="floating-badges">
+        <div class="badge badge-1">Python</div>
+        <div class="badge badge-2">MuleSoft</div>
+        <div class="badge badge-3">Java</div>
+        <div class="badge badge-4">REST APIs</div>
+        <div class="badge badge-5">Flask</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a <strong>Computer Science Engineering</strong> graduate with an <strong>MBA in Systems Management</strong> from the University of Madras. My passion lies at the intersection of software engineering and enterprise integration.</p>
+          <p>With hands-on experience in cybersecurity, API-led integration via MuleSoft, and full-stack development with Python and Flask, I bring both technical depth and business acumen to every project.</p>
+          <p>I thrive on solving complex problems and building solutions that make a real difference — whether that's detecting phishing websites with machine learning or streamlining enterprise workflows with Anypoint Platform.</p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-num">8.88</span>
+            <span class="stat-label">BE CGPA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">71%</span>
+            <span class="stat-label">MBA Score</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+          </div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <h3>Technologies</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MuleSoft</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          </div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Teamwork</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Decision Making</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Bars -->
+      <div class="skill-bars reveal">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Python</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>MuleSoft / Anypoint</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>REST API Integration</span><span class="skill-pct">78%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Java</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Flask / Web Dev</span><span class="skill-pct">72%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Experience & Education</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-type work">Work</span>
+            <h3>MuleSoft Developer (Training)</h3>
+            <p class="timeline-org">Anypoint Platform</p>
+            <ul class="timeline-points">
+              <li>Built integration flows using Mule 4 and Anypoint Platform</li>
+              <li>Worked with REST APIs, API-led connectivity, and error handling</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-type work">Internship</span>
+            <h3>Cybersecurity Intern</h3>
+            <p class="timeline-org">AICL</p>
+            <ul class="timeline-points">
+              <li>Assisted with system monitoring and basic vulnerability assessments</li>
+              <li>Learned fundamentals of data security and documentation practices</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-type edu">Education</span>
+            <h3>MBA in Systems Management</h3>
+            <p class="timeline-org">University of Madras · 2023 – 2025</p>
+            <p class="timeline-score">Score: 71.23%</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-type edu">Education</span>
+            <h3>B.E. in Computer Science</h3>
+            <p class="timeline-org">Panimalar Institute of Technology · 2018 – 2022</p>
+            <p class="timeline-score">CGPA: 8.88</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal featured">
+          <div class="project-card-top">
+            <div class="project-icon">🛡️</div>
+            <div class="project-links">
+              <a href="#" class="proj-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <span class="project-label">Final Year Project</span>
+          <h3>Phishing Website Detector</h3>
+          <p>A Flask-based machine learning tool to detect phishing websites in real-time. Combines URL analysis with ML classification models to protect users from cyber threats.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Flask</span><span>Machine Learning</span><span>Cybersecurity</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon">🎬</div>
+            <div class="project-links">
+              <a href="#" class="proj-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Movie Bucket List</h3>
+          <p>A Python + SQLite application to manage, store, and organize a personal collection of favourite movies with persistent local database storage.</p>
+          <div class="project-tech">
+            <span>Python</span><span>SQLite</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon">🎵</div>
+            <div class="project-links">
+              <a href="#" class="proj-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>MP3 Converter</h3>
+          <p>A Python utility using the moviepy library to convert video files into high-quality MP3 audio format with a clean command-line interface.</p>
+          <div class="project-tech">
+            <span>Python</span><span>moviepy</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon">🌐</div>
+            <div class="project-links">
+              <a href="#" class="proj-link" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Portfolio Website</h3>
+          <p>Designed and deployed a personal portfolio site to showcase projects, skills, and professional experience — the very site you're on now.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">🏆</div>
+          <h3>MuleSoft Certified Developer</h3>
+          <p>Level 1 — Anypoint Platform</p>
+          <span class="cert-badge">Official Certification</span>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🔒</div>
+          <h3>Cybersecurity Training</h3>
+          <p>AICL — Security Fundamentals</p>
+          <span class="cert-badge">Verified</span>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">📚</div>
+          <h3>Technical Support Fundamentals</h3>
+          <p>Coursera — Google IT Support</p>
+          <span class="cert-badge">Coursera</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <p class="contact-intro">I'm currently open to new opportunities — whether that's a full-time role, internship, or exciting freelance project. Let's build something great together.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <a href="mailto:ma.ganesh8460@gmail.com">ma.ganesh8460@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <a href="tel:+919025404333">+91 9025404333</a>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Chennai, India</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">GK<span class="dot">.</span></span>
+      <p>© 2025 Ganesh Kumar M A. Built with passion in Chennai.</p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">in</a>
+        <a href="https://github.com" target="_blank" aria-label="GitHub">gh</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
